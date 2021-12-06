@@ -37,7 +37,7 @@ const Project = ({ heading, username, length, specfic }) => {
       try {
         for (let repoName of specfic) {
           const response = await axios.get(`${specficReposAPI}/${repoName}`);
-          repoList.push(response.data);
+          repoList.unshift(response.data);
         }
       } catch (error) {
         console.error(error.message);

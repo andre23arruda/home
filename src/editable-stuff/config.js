@@ -65,8 +65,8 @@ const repos = {
   show: true,
   heading: "Recent Projects",
   gitHubUsername: "andre23arruda",
-  reposLength: 8,
-  specificRepos: [],
+  reposLength: 4,
+  specificRepos: ['django-admin-dark-mode', 'todo-cards', 'trilhas-poeticas', 'my-pokedex' ],
 };
 
 // Leadership SECTION
@@ -100,22 +100,22 @@ const skills = {
   hardSkills: [
     { name: "Python", value: 90 },
     { name: "Django", value: 90 },
-    { name: "SQL", value: 75 },
     { name: "Data Structures", value: 85 },
+    { name: "SQL", value: 75 },
     { name: "HTML/CSS", value: 80 },
     { name: "JavaScript", value: 90 },
     { name: "React", value: 90 },
     { name: "React Native", value: 70 },
   ],
   softSkills: [
-    { name: "Goal-Oriented", value: 80 },
-    { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
-    { name: "Organization", value: 70 },
+    { name: "Positivity", value: 100 },
+    { name: "Collaboration", value: 95 },
     { name: "Creativity", value: 90 },
+    { name: "Problem Solving", value: 90 },
+    { name: "Adaptability", value: 85 },
+    { name: "Goal-Oriented", value: 80 },
+    { name: "Empathy", value: 75 },
+    { name: "Organization", value: 70 },
   ],
 };
 
