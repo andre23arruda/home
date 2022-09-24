@@ -9,7 +9,7 @@ import {
   skills,
   getInTouch,
   experiences
-} from "./editable-stuff/config.js";
+} from "./config/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
 import Project from "./components/home/Project";
@@ -23,13 +23,16 @@ import Leadership from "./components/home/Leadership.jsx";
 
 import Experience from "./components/home/Experience";
 
+const currentDate = new Date()
+const age = currentDate.getFullYear() - mainBody.birthYear
+
 const Home = React.forwardRef((props, ref) => {
   return (
     <>
       <MainBody
         gradient={mainBody.gradientColors}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
-        message={mainBody.message}
+        message={`${ age }, ` + mainBody.message}
         icons={mainBody.icons}
         ref={ref}
       />
@@ -70,7 +73,7 @@ const Home = React.forwardRef((props, ref) => {
           softSkills={skills.softSkills}
         />
       )}
-      
+
     </>
   );
 });

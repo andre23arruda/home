@@ -7,8 +7,8 @@
      git clone https://github.com/<your-username>/home.git
    ```
 
-3. Open in editor and edit [src/editable-stuff/configurations.json](./src/editable-stuff/configurations.json) file.
-4. Add your resume as <resume.pdf> in place of [src/editable-stuff/resume.pdf](./src/editable-stuff/)
+3. Open in editor and edit [src/config/configurations.json](./src/config/configurations.json) file.
+4. Add your resume as <resume.pdf> in place of [src/config/resume.pdf](./src/config/)
 5. Edit [title](./public/index.html#L34) and meta [description](./public/index.html#L13) in [public/index.html](./public/index.html).
 6. Change URL in [package.json](./package.json) file:
 
